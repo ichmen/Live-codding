@@ -1,0 +1,50 @@
+.navigation {
+  display: flex;
+  background-color: #ff7f50;
+  min-height: 200px;
+}
+/* .container {
+  display: flex;
+  flex-direction: column;
+} */
+.products-list {
+  display: flex;
+  border-color: #006400;
+  min-height: 200px;
+}
+.news {
+  display: flex;
+  border-color: #0ff;
+  min-height: 200px;
+}
+span {
+  padding: 8px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #faebd7;
+  border-radius: 4px;
+  text-transform: lowercase;
+  margin: auto;
+}
+
+@media (min-width: 600px) {
+  .products {
+    display: flex;
+  }
+  .navigation {
+    flex: 1;
+  }
+  .products-list {
+    flex: 1;
+  }
+}
+@media (min-width: 900px) {
+  .container {
+    display: flex;
+  }
+  .products {
+    flex: 2;
+  }
+  .news {
+    flex: 1;
+  }
+}
